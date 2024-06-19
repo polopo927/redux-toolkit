@@ -6,4 +6,21 @@
 body {
   background-color: #202020;
   font-size: 16px;
+  color: #fff;
+}
+
+button {
+  background-color: #E08594;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 4px 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+
+button:hover {
+  background-color: #de687c;
 }
