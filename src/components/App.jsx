@@ -3,9 +3,12 @@ import { CreateRecipe } from "./create-recipe/createRecipe"
 import { Header } from "./header/Header"
 import { RecipeItem } from "./recipe-item/RecipeItem"
 
+const userId = 1
 
 function App() {
-  const { isLoading, data } = useGetRecipesQuery()
+  const { isLoading, data } = useGetRecipesQuery(undefined,{
+    skip: !userId
+  })
   console.log(data)
 
   return (
