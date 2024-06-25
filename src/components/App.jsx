@@ -1,7 +1,7 @@
 import { useGetRecipesQuery } from "../store/api/api"
+import { CreateRecipe } from "./create-recipe/createRecipe"
 import { Header } from "./header/Header"
 import { RecipeItem } from "./recipe-item/RecipeItem"
-
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
   return (
     <section>
       <Header />
+      <CreateRecipe />
       <div>
         {isLoading ?
           (<div>Loading...</div>)
