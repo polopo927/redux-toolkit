@@ -1,8 +1,9 @@
 import styles from './RecipeItem.module.css'
 import { useActions } from '../../hooks/useActions'
 import { useFavorites } from '../../hooks/useFavorites'
+import { IRecipeItem } from '../../types/recipe.types'
 
-export const RecipeItem = ({ recipe }) => {
+export const RecipeItem = ({ recipe }: IRecipeItem) => {
   const { favorites } = useFavorites()
   const { toggleFavorites } = useActions()
   const isExists = favorites.some(r => r.id === recipe.id)
